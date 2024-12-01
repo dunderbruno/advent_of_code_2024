@@ -14,3 +14,11 @@ for i in range(len(first)):
 
 total_distance = sum(distances)
 print(f'Total distance: {total_distance}')
+
+# Part 2
+similarity = [] 
+for i in first:
+    similarity.append(i * second.count(i))
+
+similarity_score = sum(similarity)
+print(f'Similarity score: {similarity_score}')
